@@ -1,0 +1,22 @@
+{
+  "name": "allo-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:css": "postcss ./tailwind.css -o ./styles.css --watch",
+    "dev": "npm run tailwind:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "eslint": "^8.42.0",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.8"
+  }
+}
