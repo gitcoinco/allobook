@@ -1,5 +1,5 @@
 # allobook
-onchain capital allocatoin book website.
+onchain capital allocation book website.
 
 View me @ https://allobook.gitcoin.co
 
