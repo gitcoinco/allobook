@@ -88,6 +88,9 @@ a,
   transition: 0.3s ease all;
   background-color: black;
 }
+.link.secondary::after {
+width: 70%;
+}
 
 .link:hover::after {
   width: 100%;
