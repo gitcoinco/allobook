@@ -10,6 +10,7 @@
   <meta name="description" content="A Practical Journey from Present Mechanisms to Future Possibilities ">
 
   <!-- fonts and styles -->
+  <link rel="stylesheet" href="https://unpkg.com/franken-ui/dist/css/core.min.css" />
   <link rel="stylesheet" href="./styles.css" rel="stylesheet" />
   <link rel="stylesheet" href="./custom-styles.css" rel="stylesheet" />
   <link rel="preload" as="image" href="./src/images/allo-book-bg.svg">
@@ -41,21 +42,77 @@
   <meta property="og:url" content="https://allobook.gitcoin.co" />
   <meta property="og:image" content="https://allobook.gitcoin.co/src/images/allo-book-twitter-card.jpg" />
   <meta property="og:description" content="A Practical Journey from Present Mechanisms to Future Possibilities" />
+
+  <script src="https://unpkg.com/franken-ui@1.1.0/dist/js/core.iife.js" type="module"></script>
+  <script src="https://unpkg.com/franken-ui@1.1.0/dist/js/icon.iife.js" type="module"></script>
 </head>
 
 <body id="body" class="relative overflow-x-hidden max-w-[100vw]">
+  <div id="new-header" class="hidden">
+    <header class=" sm:px-6 lg:px-28 px-4 bg-black flex items-center justify-between sm:gap-16 gap-2 py-2">
+      <div class="flex items-center sm:gap-16 gap-2">
+        <div><img src="./src/images/allo-logo.svg" alt="Allo logo" width="74" height="20"
+            class="sm:max-w-none max-h-[15px] w-auto" /></div>
+
+        <div class="sm:hidden">
+          <button class="uk-button uk-button-default !text-white !border-none !font-semibold" type="button">
+            <div class="flex items-center gap-2">
+              Book
+              <img alt="" width="12" height="11" src="./src/images/down-icon.svg" />
+            </div>
+          </button>
+          <div class="uk-drop uk-dropdown !bg-black !text-white" uk-dropdown="mode: click">
+            <ul class="uk-dropdown-nav uk-nav">
+              <li><a href="https://allo.expert/" target="_blank" class="hover:!bg-gray-800 white">
+                  Experts
+                </a></li>
+              <li><a href="https://leaderboard.allo.gitcoin.co/" target="_blank" class="hover:!bg-gray-800 white">
+                  Leaderboard
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="hidden sm:!block ">
+          <ul class="font-semibold flex items-center sm:gap-8 gap-4 text-white">
+            <li>
+              <a href="https://allo.expert/" target="_blank" class="link white ">
+                Experts
+              </a>
+            </li>
+            <li>
+              <a href="https://leaderboard.allo.gitcoin.co/" target="_blank" class="link white">
+                Leaderboard
+              </a>
+            </li>
+            <li>
+              <a href="https://allobook.gitcoin.co/" class="link white selected">
+                Book
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <a href="https://t.me/+eY1-8OcToHI3ZWJh" target="_blank"><button class="secondary text-sm">Join Telegram
+            Group</button></a>
+      </div>
+    </header>
+  </div>
+
+
   <div class="relative sm:pt-10 pt-6 lg:px-28 px-4 mx-auto overflow-x-hidden max-w-[100vw]">
+    <div id="prev-header">
+      <header class="flex justify-end">
+        <a href="https://t.me/+eY1-8OcToHI3ZWJh" target="_blank"><button class="secondary">Join Telegram
+            Group</button></a>
+      </header>
+    </div>
     <div>
       <img src="./src/images/allo-book-bg.svg" id="hero-bg"
         class="absolute -top-10 xl:right-0 lg:-right-72 -right-72 z-[-1] md:max-w-none max-w-2xl h-auto origin-center"
         alt="" />
     </div>
     <main>
-
-      <header class="flex justify-end">
-        <a href="https://t.me/+eY1-8OcToHI3ZWJh" target="_blank"><button class="secondary">Join Telegram
-            Group</button></a>
-      </header>
       <section class="mt-10">
         <h1 class="font-semibold sm:text-xl mb-2 slide-in">Onchain Capital Allocation Handbook - by Kevin Owocki</h1>
         <h2 class="font-sans font-bold text-4xl sm:text-5xl md:text-6xl max-w-[15ch] mb-6 reveal-opacity">Discover the
@@ -90,12 +147,14 @@
                 <a href="./src/pdf/onchain-capital-allocation.pdf" target="_blank"><button
                     class="primary sm:w-40 w-28 btn-small"><span class="sm:inline-block hidden">Download</span>
                     PDF</button></a>
-                <a  href="https://zora.co/collect/zora:0xae85abc4f2a667993f895effe19cd396d467c999/1"><button
+                <a href="https://zora.co/collect/zora:0xae85abc4f2a667993f895effe19cd396d467c999/1"><button
                     class="primary sm:w-40 w-28 btn-small">NFT</button></a>
                 <a href="https://www.blurb.com/b/12052748-onchain-capital-allocation-handbook" target="_blank"><button
                     class="primary sm:w-40 w-28 btn-small">Print</button></a>
               </div>
-              <h4 class="font-sans font-bold text-xl sm:text-2xl mb-8 sm:text-left text-center slide-in-on-scroll">..or.. chat with <a href="https://chatgpt.com/g/g-qxyE9BjKk-allobookgpt" target="_blank" class="link secondary">AlloBookGPT ></a></h4>
+              <h4 class="font-sans font-bold text-xl sm:text-2xl mb-8 sm:text-left text-center slide-in-on-scroll">
+                ..or.. chat with <a href="https://chatgpt.com/g/g-qxyE9BjKk-allobookgpt" target="_blank"
+                  class="link secondary">AlloBookGPT ></a></h4>
             </div>
           </div>
         </div>
@@ -160,8 +219,46 @@
         </div>
       </section>
     </main>
-    <footer class="border-t border-purple-600 py-8 mt-32">
-      <div class="flex lg:items-center justify-between gap-x-6 gap-y-3 lg:flex-row flex-col">
+    <div id="prev-footer">
+      <footer class="border-t border-purple-600 py-8 mt-32">
+        <div class="flex lg:items-center justify-between gap-x-6 gap-y-3 lg:flex-row flex-col">
+          <p class="font-semibold">2024 Onchain Capital Allocation Handbook (OCAH) | A Gitcoin Ecosystem Drop</p>
+          <div class="self-end"><a href="https://t.me/+eY1-8OcToHI3ZWJh" target="_blank" class="link">Join Telegram
+              Group
+              ></a></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="new-footer" class="hidden">
+    <footer class="mt-24 py-10 bg-footer-gradient-bg bg-top bg-cover px-4 lg:px-28">
+      <div class="flex items-center px-6 sm:px-2 sm:flex-row flex-col gap-4 sm:gap-10 pb-10">
+        <img class="max-h-[20px] w-auto" src="./src/images/allo-logo-black.svg" alt="Allo Protocol Logo" width="111"
+          height="30" />
+
+        <nav>
+          <ul class="font-semibold flex items-center gap-8">
+            <li>
+              <a href="https://allo.expert/" target="_blank" class="link ">
+                Experts
+              </a>
+            </li>
+            <li>
+              <a href="https://leaderboard.allo.gitcoin.co/" target="_blank" class="link">
+                Leaderboard
+              </a>
+            </li>
+            <li>
+              <a href="https://allobook.gitcoin.co/" class="link selected">
+                Book
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex lg:items-center justify-between gap-x-6 gap-y-2 lg:flex-row flex-col px-6 sm:px-2">
         <p class="font-semibold">2024 Onchain Capital Allocation Handbook (OCAH) | A Gitcoin Ecosystem Drop</p>
         <div class="self-end"><a href="https://t.me/+eY1-8OcToHI3ZWJh" target="_blank" class="link">Join Telegram Group
             ></a></div>
@@ -220,4 +317,31 @@
       }
     });
   }, false);
+</script>
+
+<script type="text/javascript">
+  const newHeader = document.getElementById('new-header');
+  const prevHeader = document.getElementById('prev-header');
+  const newFooter = document.getElementById('new-footer');
+  const prevFooter = document.getElementById('prev-footer');
+
+  function getParamValue(querystring) {
+    var qstring = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for (var i = 0; i < qstring.length; i++) {
+      var urlparam = qstring[i].split('=');
+      if (urlparam[0] == querystring) {
+        return urlparam[1];
+      }
+    }
+  }
+  if (getParamValue('preview') == 'true') {
+    newHeader.style.display = 'block';
+    prevHeader.style.display = 'none';
+
+    newFooter.style.display = 'block';
+    prevFooter.style.display = 'none';
+  } else {
+    newHeader.remove();
+    newFooter.remove();
+  }
 </script>

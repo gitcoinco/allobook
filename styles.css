@@ -695,6 +695,9 @@ video {
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mt-24 {
+  margin-top: 6rem;
+}
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -793,6 +796,12 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.max-h-\[15px\] {
+  max-height: 15px;
+}
+.max-h-\[20px\] {
+  max-height: 20px;
 }
 .w-1 {
   width: 0.25rem;
@@ -1252,6 +1261,9 @@ video {
 .gap-12 {
   gap: 3rem;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-4 {
   gap: 1rem;
 }
@@ -1264,6 +1276,9 @@ video {
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 .gap-y-3 {
   row-gap: 0.75rem;
@@ -1603,11 +1618,17 @@ video {
 .border-hidden {
   border-style: hidden;
 }
+.\!border-none {
+  border-style: none !important;
+}
 .border-none {
   border-style: none;
 }
 .border-purple-600 {
   border-color: var(--purple-600);
+}
+.\!bg-black {
+  background-color: var(--black) !important;
 }
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
@@ -1619,6 +1640,9 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-footer-gradient-bg {
+  background-image: url('./src/images/footer-gradient-bg.png');
 }
 .decoration-slice {
   -webkit-box-decoration-break: slice;
@@ -1635,6 +1659,9 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+.bg-cover {
+  background-size: cover;
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -1657,6 +1684,9 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+.bg-top {
+  background-position: top;
 }
 .bg-repeat {
   background-repeat: repeat;
@@ -1711,13 +1741,32 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .pt-32 {
   padding-top: 8rem;
@@ -1782,9 +1831,16 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.\!font-semibold {
+  font-weight: 600 !important;
 }
 .font-bold {
   font-weight: 700;
@@ -1845,6 +1901,10 @@ video {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -1854,6 +1914,10 @@ video {
 }
 .text-purple-600 {
   color: var(--purple-600);
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -2201,6 +2265,10 @@ video {
   --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.hover\:\!bg-gray-800:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity)) !important;
+}
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2228,8 +2296,16 @@ video {
     margin-bottom: 2rem;
   }
 
+  .sm\:\!block {
+    display: block !important;
+  }
+
   .sm\:inline-block {
     display: inline-block;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-40 {
@@ -2238,6 +2314,10 @@ video {
 
   .sm\:w-\[300px\] {
     width: 300px;
+  }
+
+  .sm\:max-w-none {
+    max-width: none;
   }
 
   .sm\:scale-\[1\.2\] {
@@ -2258,8 +2338,26 @@ video {
     justify-content: flex-start;
   }
 
+  .sm\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .sm\:gap-16 {
     gap: 4rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:py-0 {

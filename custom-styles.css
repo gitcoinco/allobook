@@ -88,11 +88,15 @@ a,
   transition: 0.3s ease all;
   background-color: black;
 }
+.link.white::after {
+  background-color: white;
+}
 .link.secondary::after {
 width: 70%;
 }
 
-.link:hover::after {
+.link:hover::after,
+.link.selected::after {
   width: 100%;
 }
 
