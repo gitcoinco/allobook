@@ -18,6 +18,8 @@ module.exports = {
       },
        backgroundImage: {
         "hero-bg": "url('/src/images/allo-book-bg.svg')",
+        "footer-gradient-bg": "url('./src/images/footer-gradient-bg.png')",
+
       },
     },
   },
