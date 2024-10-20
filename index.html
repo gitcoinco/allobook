@@ -20,6 +20,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@300..700&display=swap"
     rel="stylesheet">
 
+
   <!-- icons -->
   <link rel="apple-touch-icon" sizes="180x180"
     href="https://assets-global.website-files.com/6433c5d029c6bb75f3f00bd5/6433c5d029c6bb9127f00c07_gitcoin-fav3.png" />
@@ -45,6 +46,16 @@
 
   <script src="https://unpkg.com/franken-ui@1.1.0/dist/js/core.iife.js" type="module"></script>
   <script src="https://unpkg.com/franken-ui@1.1.0/dist/js/icon.iife.js" type="module"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6FCENMDYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R6FCENMDYW');
+  </script>
 </head>
 
 <body id="body" class="relative overflow-x-hidden max-w-[100vw]">
@@ -120,7 +131,8 @@
         <h2 class="font-sans font-bold text-4xl sm:text-5xl md:text-6xl max-w-[15ch] mb-6 reveal-opacity">Discover the
           emerging frontier
           of onchain coordination.</h2>
-        <a href="./src/pdf/onchain-capital-allocation.pdf" target="_blank"><button class="primary">Read the
+        <a href="./src/pdf/onchain-capital-allocation.pdf" target="_blank" id="read-book-btn"><button
+            class="primary">Read the
             book</button></a>
       </section>
       <section class="md:grid grid-cols-3 gap-8 pt-32">
@@ -146,7 +158,7 @@
                 the Onchain Capital
                 Allocation handbook</h4>
               <div class="flex md:flex-row sm:flex-col justify-center sm:justify-start xl:gap-6 gap-4">
-                <a href="./src/pdf/onchain-capital-allocation.pdf" target="_blank"><button
+                <a href="./src/pdf/onchain-capital-allocation.pdf" target="_blank" id="download-pdf-btn"><button
                     class="primary sm:w-40 w-28 btn-small"><span class="sm:inline-block hidden">Download</span>
                     PDF</button></a>
                 <a href="https://zora.co/collect/zora:0xae85abc4f2a667993f895effe19cd396d467c999/1"><button
