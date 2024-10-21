@@ -2312,6 +2312,10 @@ video {
     width: 300px;
   }
 
+  .sm\:w-\[74px\] {
+    width: 74px;
+  }
+
   .sm\:max-w-none {
     max-width: none;
   }
