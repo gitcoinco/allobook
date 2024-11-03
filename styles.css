@@ -701,9 +701,6 @@ video {
 .mt-3 {
   margin-top: 0.75rem;
 }
-.mt-32 {
-  margin-top: 8rem;
-}
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1286,9 +1283,6 @@ video {
 .gap-y-2 {
   row-gap: 0.5rem;
 }
-.gap-y-3 {
-  row-gap: 0.75rem;
-}
 .gap-y-4 {
   row-gap: 1rem;
 }
@@ -1630,9 +1624,6 @@ video {
 .border-none {
   border-style: none;
 }
-.border-purple-600 {
-  border-color: var(--purple-600);
-}
 .\!bg-black {
   background-color: var(--black) !important;
 }
@@ -1762,10 +1753,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
