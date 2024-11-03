@@ -59,7 +59,7 @@
 </head>
 
 <body id="body" class="relative overflow-x-hidden max-w-[100vw]">
-  <div id="new-header" class="hidden">
+  <div id="new-header">
     <header class=" sm:px-6 lg:px-28 px-4 bg-black flex items-center justify-between sm:gap-16 gap-2 py-2">
       <div class="flex items-center sm:gap-16 gap-2">
         <div>
@@ -114,12 +114,6 @@
 
 
   <div class="relative sm:pt-10 pt-6 lg:px-28 px-4 mx-auto overflow-x-hidden max-w-[100vw]">
-    <div id="prev-header">
-      <header class="flex justify-end">
-        <a href="https://t.me/+eY1-8OcToHI3ZWJh" target="_blank"><button class="secondary">Join Telegram
-            Group</button></a>
-      </header>
-    </div>
     <div>
       <img src="./src/images/allo-book-bg.svg" id="hero-bg"
         class="absolute -top-10 xl:right-0 lg:-right-72 -right-72 z-[-1] md:max-w-none max-w-2xl h-auto origin-center"
@@ -233,19 +227,9 @@
         </div>
       </section>
     </main>
-    <div id="prev-footer">
-      <footer class="border-t border-purple-600 py-8 mt-32">
-        <div class="flex lg:items-center justify-between gap-x-6 gap-y-3 lg:flex-row flex-col">
-          <p class="font-semibold">2024 Onchain Capital Allocation Handbook (OCAH) | A Gitcoin Ecosystem Drop</p>
-          <div class="self-end"><a href="https://t.me/+eY1-8OcToHI3ZWJh" target="_blank" class="link">Join Telegram
-              Group
-              ></a></div>
-        </div>
-      </footer>
-    </div>
   </div>
 
-  <div id="new-footer" class="hidden">
+  <div id="new-footer">
     <footer class="mt-24 py-10 bg-footer-gradient-bg bg-top bg-cover px-4 lg:px-28">
       <div class="flex items-center px-6 sm:px-2 sm:flex-row flex-col gap-4 sm:gap-10 pb-10">
         <a href="https://allo.expert/"> <img class="max-h-[20px] w-auto"
@@ -336,8 +320,6 @@
 <script type="text/javascript">
   const newHeader = document.getElementById('new-header');
   const prevHeader = document.getElementById('prev-header');
-  const newFooter = document.getElementById('new-footer');
-  const prevFooter = document.getElementById('prev-footer');
 
   function getParamValue(querystring) {
     var qstring = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
@@ -347,15 +329,5 @@
         return urlparam[1];
       }
     }
-  }
-  if (getParamValue('preview') == 'true') {
-    newHeader.style.display = 'block';
-    prevHeader.style.display = 'none';
-
-    newFooter.style.display = 'block';
-    prevFooter.style.display = 'none';
-  } else {
-    newHeader.remove();
-    newFooter.remove();
   }
 </script>
